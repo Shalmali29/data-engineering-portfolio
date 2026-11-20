@@ -1,0 +1,26 @@
+# Shalmali's Data Engineering Portfolio
+
+A practical portfolio of data engineering projects focused on reliable extraction, transformation, validation, and delivery of structured data.
+
+**Data Engineer | Python · ETL · Data Pipelines · Data Quality**
+
+## Projects
+
+### 01 — Multilingual E-commerce Data Pipeline
+A Python and pandas ETL pipeline that converts messy multilingual catalogue records into a canonical product dataset and configurable downstream platform schemas.
+
+- Locale-aware price parsing (for example, `1.299,50` → `1299.50`)
+- Availability normalization across English, German, French, and Spanish labels
+- Duplicate detection and rejected-record reporting
+- Configurable schema mappings for two downstream platforms
+- Unit tests with pytest and GitHub Actions CI
+
+[Open project documentation](./01-multilingual-ecommerce-pipeline/README.md)
+
+## Tech stack
+Python, pandas, SQL, PySpark, PostgreSQL, data validation, ETL, web data extraction, GitHub Actions.
+
+## About this portfolio
+All datasets in this repository are synthetic and independently created for demonstration. No employer, customer, or production data is included.
+
+More projects will be added here as separate, documented modules.
