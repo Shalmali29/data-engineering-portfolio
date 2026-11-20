@@ -74,3 +74,22 @@ jobs:
       - name: Run asset pipeline tests
         working-directory: 04-cloud-image-asset-pipeline
         run: pytest -q
+
+  real-estate-rag-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install project dependencies
+        run: python -m pip install -r 05-real-estate-rag-data-pipeline/requirements.txt
+      - name: Generate synthetic property catalogue
+        working-directory: 05-real-estate-rag-data-pipeline
+        run: python -m src.generate_sample_data
+      - name: Run property ETL
+        working-directory: 05-real-estate-rag-data-pipeline
+        run: python -m src.pipeline
+      - name: Run data pipeline and retrieval tests
+        working-directory: 05-real-estate-rag-data-pipeline
+        run: pytest -q
