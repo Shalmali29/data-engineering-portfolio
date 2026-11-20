@@ -18,9 +18,10 @@ def _json_list(value: str, field: str) -> tuple[list[dict[str, Any]], str | None
 def to_canonical(row: dict[str, str]) -> tuple[dict[str, Any], list[str]]:
     issues: list[str] = []
     try:
-        price = str(Decimal(row.get("price", "")))
-        if Decimal(price) < 0:
+        amount = Decimal(row.get("price", ""))
+        if not amount.is_finite() or amount < 0:
             raise InvalidOperation
+        price = str(amount)
     except (InvalidOperation, ValueError):
         price = None
         issues.append("price: missing or invalid non-negative decimal")
