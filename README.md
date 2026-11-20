@@ -17,6 +17,11 @@ A Python and pandas ETL pipeline that converts messy multilingual catalogue reco
 
 [Open project documentation](./01-multilingual-ecommerce-pipeline/README.md)
 
+### 02 — Large-Scale Catalogue Processing with PySpark
+A local Spark ETL project that generates 10,000 synthetic catalogue records, validates them, separates rejected rows, and produces sector/category analytics in Parquet.
+
+[Open project documentation](./02-pyspark-large-scale-processing/README.md)
+
 ## Tech stack
 Python, pandas, SQL, PySpark, PostgreSQL, data validation, ETL, web data extraction, GitHub Actions.
 
