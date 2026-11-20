@@ -22,6 +22,11 @@ A local Spark ETL project that generates 10,000 synthetic catalogue records, val
 
 [Open project documentation](./02-pyspark-large-scale-processing/README.md)
 
+### 03 — Multi-Schema Catalogue Integration
+Transforms one canonical product model into three distinct destination payloads, including nested variants, warehouse inventory and validation reporting.
+
+[Open project documentation](./03-multi-schema-catalogue-integration/README.md)
+
 ## Tech stack
 Python, pandas, SQL, PySpark, PostgreSQL, data validation, ETL, web data extraction, GitHub Actions.
 
