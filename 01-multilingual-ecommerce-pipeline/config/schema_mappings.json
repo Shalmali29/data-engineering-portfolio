@@ -1,0 +1,18 @@
+{
+  "platform_a": {
+    "product_id": "sku",
+    "title": "product_name",
+    "price": "selling_price",
+    "currency": "currency_code",
+    "availability": "stock_status",
+    "category": "category_name"
+  },
+  "platform_b": {
+    "product_id": "id",
+    "title": "title",
+    "price": "price_amount",
+    "currency": "currency",
+    "availability": "availability",
+    "category": "product_type"
+  }
+}
