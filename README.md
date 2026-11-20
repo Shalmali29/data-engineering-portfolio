@@ -37,8 +37,13 @@ Prepares synthetic property records for retrieval: validates catalogue data, cre
 
 [Open project documentation](./05-real-estate-rag-data-pipeline/README.md)
 
+### 06 — Data Quality and Pipeline Monitoring
+Applies reusable catalogue validation rules, quarantines invalid rows, calculates batch quality metrics, and produces a JSON operational report with configurable warning/failure thresholds.
+
+[Open project documentation](./06-data-quality-pipeline-monitoring/README.md)
+
 ## Tech stack
-Python, pandas, SQL, PySpark, PostgreSQL, GCP Cloud Storage, MongoDB, Weaviate, embeddings, data validation, ETL, web data extraction, GitHub Actions.
+Python, pandas, SQL, PySpark, PostgreSQL, GCP Cloud Storage, MongoDB, Weaviate, embeddings, data quality monitoring, ETL, web data extraction, GitHub Actions.
 
 ## About this portfolio
 All datasets in this repository are synthetic and independently created for demonstration. No employer, customer, or production data is included.
