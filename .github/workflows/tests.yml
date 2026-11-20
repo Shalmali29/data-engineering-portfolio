@@ -38,5 +38,4 @@ jobs:
         working-directory: 02-pyspark-large-scale-processing
         env:
           PYSPARK_PYTHON: python
-          JAVA_HOME: ${{ runner.temp }}/jdk
         run: pytest -q
