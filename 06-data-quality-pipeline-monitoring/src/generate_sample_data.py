@@ -9,10 +9,9 @@ ROWS = [
     ["SKU-004", "Desk lamp", "Home", "25.00", "preorder"],
     ["SKU-005", "Wireless mouse", "Electronics", "15.75", "in_stock"],
     ["SKU-006", "Damaged record", "Home", "-5.00", "in_stock"],
-    ["SKU-007", "Unknown stock", "Electronics", "12.00", "available"],
-    ["SKU-008", "", "Fashion", "21.00", "in_stock"],
     ["SKU-002", "Duplicate mug", "Home", "9.00", "in_stock"],
     ["SKU-010", "Water bottle", "Sports", "11.50", "out_of_stock"],
+    ["SKU-011", "Travel backpack", "Fashion", "39.00", "in_stock"],
 ]
 
 
