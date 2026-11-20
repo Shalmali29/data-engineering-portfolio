@@ -50,7 +50,7 @@ def test_pipeline_writes_three_outputs_and_report(tmp_path):
     source = tmp_path / "products.csv"
     source.write_text(
         "product_id,title,description,category,price,currency,image_urls,variants_json,warehouses_json\n"
-        'P-1,Test Product,A test,Home,10.50,EUR,https://example.test/a.jpg,"[]","[]",\n',
+        'P-1,Test Product,A test,Home,10.50,EUR,https://example.test/a.jpg,"[]","[]"\n',
         encoding="utf-8",
     )
     result = run(source, tmp_path / "processed")
@@ -59,3 +59,11 @@ def test_pipeline_writes_three_outputs_and_report(tmp_path):
         assert (tmp_path / "processed" / filename).exists()
     report = json.loads((tmp_path / "processed/validation_report.json").read_text())
     assert isinstance(report, list)
+
+
+def test_non_finite_price_is_rejected():
+    row = sample()
+    row["price"] = "NaN"
+    product, issues = to_canonical(row)
+    assert product["price"] is None
+    assert "price: missing or invalid non-negative decimal" in issues
