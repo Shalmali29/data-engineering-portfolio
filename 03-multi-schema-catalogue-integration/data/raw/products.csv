@@ -1,0 +1,6 @@
+product_id,title,description,category,price,currency,image_urls,variants_json,warehouses_json
+P-1001,Everyday Cotton Shirt,Soft cotton shirt for daily wear,Fashion,24.99,EUR,"https://example.test/img/p1001-front.jpg|https://example.test/img/p1001-back.jpg","[{""sku"":""P-1001-S"",""size"":""S"",""color"":""Blue""},{""sku"":""P-1001-M"",""size"":""M"",""color"":""Blue""}]","[{""warehouse_id"":""WH-01"",""stock"":12},{""warehouse_id"":""WH-02"",""stock"":8}]"
+P-1002,Glass Storage Jar,Clear glass kitchen storage jar,Home,8.50,EUR,https://example.test/img/p1002.jpg,"[{""sku"":""P-1002-1"",""size"":""1L"",""color"":""Clear""}]","[{""warehouse_id"":""WH-01"",""stock"":0}]"
+P-1003,Wireless Headphones,,Electronics,59.00,EUR,https://example.test/img/p1003.jpg,"[{""sku"":""P-1003-BLK"",""size"":""One Size"",""color"":""Black""}]","[{""warehouse_id"":""WH-03"",""stock"":5}]"
+P-1004,Organic Oat Drink,Plant-based oat drink,Grocery,2.79,EUR,https://example.test/img/p1004.jpg,[], "[{""warehouse_id"":""WH-02"",""stock"":""unknown""}]"
+P-1005,Desk Lamp,Adjustable LED desk lamp,Home,31.25,EUR,https://example.test/img/p1005.jpg,"[{""sku"":""P-1005-WHT"",""size"":""Standard"",""color"":""White""}]","[{""warehouse_id"":""WH-01"",""stock"":16}]"
