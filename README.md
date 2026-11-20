@@ -1,4 +1,4 @@
-# Shalmali's Data Engineering Portfolio
+# Data Engineering Portfolio
 
 A practical portfolio of data engineering projects focused on reliable extraction, transformation, validation, and delivery of structured data.
 
