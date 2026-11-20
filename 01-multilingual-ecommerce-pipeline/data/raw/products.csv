@@ -1,0 +1,10 @@
+product_id,title,locale,price,currency,availability,category,image_url
+P-1001,Wireless Headphones,en_IE,"€89.99",EUR,In Stock,Electronics,https://example.com/images/p1001.jpg
+P-1002,Kabellose Maus,de_DE,"1.299,50",EUR,Auf Lager,Computerzubehör,https://example.com/images/p1002.jpg
+P-1003,Chaussures de course,fr_FR,"79,90",EUR,En stock,Mode,https://example.com/images/p1003.jpg
+P-1004,Smart Watch,en_GB,"£149.00",GBP,Out of Stock,Electronics,https://example.com/images/p1004.jpg
+P-1005,Teclado inalámbrico,es_ES,"49,95",EUR,Disponible,Electrónica,https://example.com/images/p1005.jpg
+P-1006,Desk Lamp,en_IE,not-a-price,EUR,In Stock,Home,https://example.com/images/p1006.jpg
+P-1007,Portable Speaker,en_IE,"NaN",EUR,In Stock,Electronics,https://example.com/images/p1007.jpg
+P-1008,Travel Mug,en_IE,"24.50",EUR,Unavailable,Home,https://example.com/images/p1008.jpg
+P-1001,Wireless Headphones Duplicate,en_IE,"89.99",EUR,In Stock,Electronics,https://example.com/images/p1001-duplicate.jpg
