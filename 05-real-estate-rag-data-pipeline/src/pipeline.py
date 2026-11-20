@@ -1,6 +1,7 @@
 """Validate synthetic property records and prepare RAG-ready documents."""
 import csv
 import json
+import math
 from pathlib import Path
 
 REQUIRED_TEXT = ("property_id", "title", "description", "city", "property_type")
@@ -14,14 +15,14 @@ def clean_record(row: dict) -> tuple[dict, list[str]]:
             errors.append(f"missing_{field}")
     try:
         price = float(cleaned.get("price", ""))
-        if price <= 0:
+        if not math.isfinite(price) or price <= 0:
             raise ValueError
     except (TypeError, ValueError):
         price = None
         errors.append("invalid_price")
     try:
         area = float(cleaned.get("area_sqft", ""))
-        if area <= 0:
+        if not math.isfinite(area) or area <= 0:
             raise ValueError
     except (TypeError, ValueError):
         area = None
