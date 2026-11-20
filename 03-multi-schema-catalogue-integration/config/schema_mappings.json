@@ -1,0 +1,44 @@
+{
+  "schema_a": {
+    "description": "Flat commerce catalogue",
+    "fields": {
+      "product_id": "id",
+      "title": "title",
+      "description": "description",
+      "category": "category",
+      "price": "price",
+      "currency": "currency",
+      "image_urls": "images",
+      "variants": "variants",
+      "total_stock": "stock"
+    }
+  },
+  "schema_b": {
+    "description": "Nested commerce catalogue with warehouse inventory",
+    "fields": {
+      "product_id": "productId",
+      "title": "name",
+      "description": "longDescription",
+      "category": "taxonomy.category",
+      "price": "pricing.amount",
+      "currency": "pricing.currency",
+      "variants": "variantOptions",
+      "warehouses": "inventory.warehouses",
+      "total_stock": "inventory.total"
+    }
+  },
+  "schema_c": {
+    "description": "Discovery and search catalogue",
+    "fields": {
+      "product_id": "item_id",
+      "title": "display_name",
+      "description": "content",
+      "category": "attributes.category",
+      "price": "attributes.price",
+      "currency": "attributes.currency",
+      "image_urls": "media.image_urls",
+      "variants": "attributes.variants",
+      "total_stock": "attributes.available_units"
+    }
+  }
+}
