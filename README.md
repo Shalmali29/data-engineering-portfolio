@@ -27,8 +27,13 @@ Transforms one canonical product model into three distinct destination payloads,
 
 [Open project documentation](./03-multi-schema-catalogue-integration/README.md)
 
+### 04 — Cloud Image and Asset Management Pipeline
+Validates synthetic catalogue image assets, hashes files, stores them through local or optional Google Cloud Storage backends, and writes updated catalogue URLs with an error report.
+
+[Open project documentation](./04-cloud-image-asset-pipeline/README.md)
+
 ## Tech stack
-Python, pandas, SQL, PySpark, PostgreSQL, data validation, ETL, web data extraction, GitHub Actions.
+Python, pandas, SQL, PySpark, PostgreSQL, GCP Cloud Storage, data validation, ETL, web data extraction, GitHub Actions.
 
 ## About this portfolio
 All datasets in this repository are synthetic and independently created for demonstration. No employer, customer, or production data is included.
