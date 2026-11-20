@@ -32,8 +32,13 @@ Validates synthetic catalogue image assets, hashes files, stores them through lo
 
 [Open project documentation](./04-cloud-image-asset-pipeline/README.md)
 
+### 05 — Real Estate Data Pipeline and RAG Search
+Prepares synthetic property records for retrieval: validates catalogue data, creates structured search documents, supports local keyword retrieval, and provides optional sentence-transformer and Weaviate adapters.
+
+[Open project documentation](./05-real-estate-rag-data-pipeline/README.md)
+
 ## Tech stack
-Python, pandas, SQL, PySpark, PostgreSQL, GCP Cloud Storage, data validation, ETL, web data extraction, GitHub Actions.
+Python, pandas, SQL, PySpark, PostgreSQL, GCP Cloud Storage, MongoDB, Weaviate, embeddings, data validation, ETL, web data extraction, GitHub Actions.
 
 ## About this portfolio
 All datasets in this repository are synthetic and independently created for demonstration. No employer, customer, or production data is included.
