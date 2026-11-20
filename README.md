@@ -42,6 +42,11 @@ Applies reusable catalogue validation rules, quarantines invalid rows, calculate
 
 [Open project documentation](./06-data-quality-pipeline-monitoring/README.md)
 
+### 07 — Euro Cup Match Data Analysis & Prediction
+An end-to-end synthetic football analytics workflow with match validation, leakage-safe rolling team-form features, chronological train/test evaluation, and comparison of a baseline, Logistic Regression, and Random Forest.
+
+[Open project documentation](./07-euro-cup-match-data-analysis/README.md)
+
 ## Tech stack
 Python, pandas, SQL, PySpark, PostgreSQL, GCP Cloud Storage, MongoDB, Weaviate, embeddings, data quality monitoring, ETL, web data extraction, GitHub Actions.
 
