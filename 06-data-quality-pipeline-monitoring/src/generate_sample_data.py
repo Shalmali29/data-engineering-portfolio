@@ -12,6 +12,8 @@ ROWS = [
     ["SKU-002", "Duplicate mug", "Home", "9.00", "in_stock"],
     ["SKU-010", "Water bottle", "Sports", "11.50", "out_of_stock"],
     ["SKU-011", "Travel backpack", "Fashion", "39.00", "in_stock"],
+    ["SKU-012", "Glass storage set", "Home", "18.00", "in_stock"],
+    ["SKU-013", "Yoga mat", "Sports", "22.00", "in_stock"],
 ]
 
 
