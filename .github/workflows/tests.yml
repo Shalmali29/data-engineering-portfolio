@@ -112,3 +112,22 @@ jobs:
       - name: Run data quality tests
         working-directory: 06-data-quality-pipeline-monitoring
         run: pytest -q
+
+  euro-cup-analytics-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install project dependencies
+        run: python -m pip install -r 07-euro-cup-match-data-analysis/requirements.txt
+      - name: Generate synthetic match data
+        working-directory: 07-euro-cup-match-data-analysis
+        run: python -m src.generate_data
+      - name: Run match analytics pipeline
+        working-directory: 07-euro-cup-match-data-analysis
+        run: python -m src.pipeline
+      - name: Run analytics tests
+        working-directory: 07-euro-cup-match-data-analysis
+        run: pytest -q
