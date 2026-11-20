@@ -7,7 +7,8 @@ Real catalogue integrations often receive inconsistent source fields, nested var
 
 ## What it demonstrates
 - Canonical data modelling independent of destination platforms
-- Configurable field mapping in JSON
+- Documented destination field-mapping specifications in JSON
+- Explicit transformation functions for each destination contract
 - Nested variant and warehouse inventory transformation
 - Safe handling of missing and malformed fields
 - Explicit validation issues rather than silently inventing values
